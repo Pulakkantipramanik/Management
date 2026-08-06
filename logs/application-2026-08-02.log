@@ -1,0 +1,20 @@
+2026-08-02 00:11:28 [http-nio-8080-exec-8] INFO  com.studentmanagement.service.impl.StudentServiceImpl - Fetching all students
+2026-08-02 00:11:28 [http-nio-8080-exec-8] INFO  com.studentmanagement.service.impl.StudentServiceImpl - Total students found : 15
+2026-08-02 00:11:28 [http-nio-8080-exec-8] INFO  com.studentmanagement.service.impl.StudentServiceImpl - findAllStudents took: 41ms
+2026-08-02 00:11:35 [http-nio-8080-exec-9] INFO  com.studentmanagement.service.impl.StudentServiceImpl - Fetching all students
+2026-08-02 00:11:35 [http-nio-8080-exec-9] INFO  com.studentmanagement.service.impl.StudentServiceImpl - Total students found : 15
+2026-08-02 00:11:35 [http-nio-8080-exec-9] INFO  com.studentmanagement.service.impl.StudentServiceImpl - findAllStudents took: 14ms
+2026-08-02 00:12:21 [http-nio-8080-exec-10] INFO  com.studentmanagement.service.impl.StudentServiceImpl - Fetching all students
+2026-08-02 00:12:21 [http-nio-8080-exec-10] INFO  com.studentmanagement.service.impl.StudentServiceImpl - Total students found : 15
+2026-08-02 00:12:21 [http-nio-8080-exec-10] INFO  com.studentmanagement.service.impl.StudentServiceImpl - findAllStudents took: 22ms
+2026-08-02 00:19:25 [http-nio-8080-exec-5] INFO  com.studentmanagement.service.impl.StudentServiceImpl - Fetching all students
+2026-08-02 00:19:25 [http-nio-8080-exec-5] INFO  com.studentmanagement.service.impl.StudentServiceImpl - Total students found : 16
+2026-08-02 00:19:25 [http-nio-8080-exec-5] INFO  com.studentmanagement.service.impl.StudentServiceImpl - findAllStudents took: 18ms
+2026-08-02 00:38:20 [http-nio-8080-exec-7] INFO  com.studentmanagement.service.impl.StudentServiceImpl - Fetching all students
+2026-08-02 00:38:20 [http-nio-8080-exec-7] INFO  com.studentmanagement.service.impl.StudentServiceImpl - Total students found : 16
+2026-08-02 00:38:20 [http-nio-8080-exec-7] INFO  com.studentmanagement.service.impl.StudentServiceImpl - findAllStudents took: 12ms
+2026-08-02 01:04:59 [SpringApplicationShutdownHook] INFO  org.springframework.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-08-02 01:04:59 [tomcat-shutdown] INFO  org.springframework.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-08-02 01:04:59 [SpringApplicationShutdownHook] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-08-02 01:04:59 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-08-02 01:04:59 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
