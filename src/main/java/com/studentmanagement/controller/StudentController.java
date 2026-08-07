@@ -1,12 +1,8 @@
 package com.studentmanagement.controller;
-
 import com.studentmanagement.entity.Student;
-//import com.studentmanagement.service.StudentService;
 import com.studentmanagement.service.impl.StudentServiceImpl;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
-
 import static org.springframework.data.jpa.domain.AbstractPersistable_.id;
 
 @RestController

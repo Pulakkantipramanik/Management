@@ -1,7 +1,5 @@
 package com.studentmanagement.entity;
-
 import jakarta.persistence.*;
-
 @Entity
 @Table(name="student")
 public class Student {
@@ -12,7 +10,6 @@ public class Student {
 
     public Student() {
     }
-
     @Override
     public String toString() {
         return "Student{" +
@@ -24,7 +21,6 @@ public class Student {
                 ", department='" + department + '\'' +
                 '}';
     }
-
     public Student(Long id, String name, String email, Long phone, Integer age, String department) {
         this.id = id;
         this.name = name;
