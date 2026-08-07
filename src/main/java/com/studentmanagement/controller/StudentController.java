@@ -15,14 +15,21 @@ public class StudentController {
     public StudentController(StudentServiceImpl studentService) {
         this.studentService = studentService;
     }
+
+
+    // Created or submit data
     @PostMapping
     public Student saveStudent(@RequestBody Student student){
         return studentService.saveStudent(student);
     }
+
+    //fetch data
     @GetMapping("/{id}")
     public Student findStudentById(@PathVariable Long id){
         return studentService.findStudentById(id);
     }
+
+    //update the data
     @PutMapping
     public Student updateStudent(@RequestBody Student student){
         return studentService.updateStudent(student);
@@ -33,6 +40,8 @@ public class StudentController {
     public void deleteStudentById(@PathVariable  Long id){
         studentService.deleteStudentById(id);
     }
+
+    //get all data one time
     @GetMapping
     public List<Student> findAllStudents(){
         return studentService.findAllStudents();

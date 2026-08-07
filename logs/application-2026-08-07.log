@@ -1,0 +1,231 @@
+2026-08-07 13:16:21 [restartedMain] INFO  com.studentmanagement.StudentManagementApplication - Starting StudentManagementApplication using Java 21.0.10 with PID 15020 (E:\Project_2026\July\StudentManagement\target\classes started by pulak in E:\Project_2026\July\StudentManagement)
+2026-08-07 13:16:21 [restartedMain] INFO  com.studentmanagement.StudentManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2026-08-07 13:16:21 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-08-07 13:16:21 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-08-07 13:16:24 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-08-07 13:16:25 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 148 ms. Found 1 JPA repository interface.
+2026-08-07 13:16:27 [restartedMain] INFO  org.springframework.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-08-07 13:16:27 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-08-07 13:16:27 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-07 13:16:27 [restartedMain] INFO  org.springframework.boot.web.context.servlet.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 5893 ms
+2026-08-07 13:16:29 [restartedMain] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-08-07 13:16:29 [restartedMain] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-08-07 13:16:31 [restartedMain] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-08-07 13:16:31 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-08-07 13:16:33 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@63023563
+2026-08-07 13:16:33 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-08-07 13:16:33 [restartedMain] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/student_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: student_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-08-07 13:16:36 [restartedMain] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-08-07 13:16:36 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-08-07 13:16:37 [restartedMain] INFO  org.springframework.data.jpa.repository.query.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-08-07 13:16:37 [restartedMain] WARN  org.springframework.boot.jpa.autoconfigure.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-08-07 13:16:37 [restartedMain] WARN  org.springframework.boot.security.autoconfigure.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: dbe8e717-a593-4d11-a939-1366e6298d98
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-08-07 13:16:37 [restartedMain] INFO  org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-08-07 13:16:38 [restartedMain] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-08-07 13:16:39 [restartedMain] INFO  org.springframework.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-08-07 13:16:39 [restartedMain] INFO  com.studentmanagement.StudentManagementApplication - Started StudentManagementApplication in 18.777 seconds (process running for 19.848)
+2026-08-07 13:16:53 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-07 13:16:53 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-08-07 13:16:53 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2026-08-07 13:16:53 [http-nio-8080-exec-1] INFO  com.studentmanagement.service.impl.StudentServiceImpl - Fetching all students
+2026-08-07 13:16:54 [http-nio-8080-exec-1] INFO  com.studentmanagement.service.impl.StudentServiceImpl - Total students found : 39
+2026-08-07 13:16:54 [http-nio-8080-exec-1] INFO  com.studentmanagement.service.impl.StudentServiceImpl - findAllStudents took: 629ms
+2026-08-07 13:17:06 [http-nio-8080-exec-2] INFO  com.studentmanagement.service.impl.StudentServiceImpl - Fetching all students
+2026-08-07 13:17:06 [http-nio-8080-exec-2] INFO  com.studentmanagement.service.impl.StudentServiceImpl - Total students found : 39
+2026-08-07 13:17:06 [http-nio-8080-exec-2] INFO  com.studentmanagement.service.impl.StudentServiceImpl - findAllStudents took: 25ms
+2026-08-07 13:17:57 [http-nio-8080-exec-7] INFO  com.studentmanagement.service.impl.StudentServiceImpl - Fetching all students
+2026-08-07 13:17:57 [http-nio-8080-exec-7] INFO  com.studentmanagement.service.impl.StudentServiceImpl - Total students found : 40
+2026-08-07 13:17:57 [http-nio-8080-exec-7] INFO  com.studentmanagement.service.impl.StudentServiceImpl - findAllStudents took: 24ms
+2026-08-07 13:18:16 [http-nio-8080-exec-8] INFO  com.studentmanagement.service.impl.StudentServiceImpl - Fetching all students
+2026-08-07 13:18:16 [http-nio-8080-exec-8] INFO  com.studentmanagement.service.impl.StudentServiceImpl - Total students found : 40
+2026-08-07 13:18:16 [http-nio-8080-exec-8] INFO  com.studentmanagement.service.impl.StudentServiceImpl - findAllStudents took: 32ms
+2026-08-07 13:44:59 [http-nio-8080-exec-9] INFO  com.studentmanagement.service.impl.StudentServiceImpl - Fetching all students
+2026-08-07 13:44:59 [http-nio-8080-exec-9] INFO  com.studentmanagement.service.impl.StudentServiceImpl - Total students found : 40
+2026-08-07 13:44:59 [http-nio-8080-exec-9] INFO  com.studentmanagement.service.impl.StudentServiceImpl - findAllStudents took: 46ms
+2026-08-07 13:45:09 [http-nio-8080-exec-10] INFO  com.studentmanagement.service.impl.StudentServiceImpl - Fetching all students
+2026-08-07 13:45:09 [http-nio-8080-exec-10] INFO  com.studentmanagement.service.impl.StudentServiceImpl - Total students found : 40
+2026-08-07 13:45:09 [http-nio-8080-exec-10] INFO  com.studentmanagement.service.impl.StudentServiceImpl - findAllStudents took: 11ms
+2026-08-07 13:45:42 [http-nio-8080-exec-2] INFO  com.studentmanagement.service.impl.StudentServiceImpl - Fetching all students
+2026-08-07 13:45:42 [http-nio-8080-exec-2] INFO  com.studentmanagement.service.impl.StudentServiceImpl - Total students found : 41
+2026-08-07 13:45:42 [http-nio-8080-exec-2] INFO  com.studentmanagement.service.impl.StudentServiceImpl - findAllStudents took: 21ms
+2026-08-07 13:45:52 [http-nio-8080-exec-3] INFO  com.studentmanagement.service.impl.StudentServiceImpl - Fetching all students
+2026-08-07 13:45:52 [http-nio-8080-exec-3] INFO  com.studentmanagement.service.impl.StudentServiceImpl - Total students found : 41
+2026-08-07 13:45:52 [http-nio-8080-exec-3] INFO  com.studentmanagement.service.impl.StudentServiceImpl - findAllStudents took: 18ms
+2026-08-07 13:52:06 [http-nio-8080-exec-7] INFO  com.studentmanagement.service.impl.StudentServiceImpl - Fetching all students
+2026-08-07 13:52:06 [http-nio-8080-exec-7] INFO  com.studentmanagement.service.impl.StudentServiceImpl - Total students found : 41
+2026-08-07 13:52:06 [http-nio-8080-exec-7] INFO  com.studentmanagement.service.impl.StudentServiceImpl - findAllStudents took: 20ms
+2026-08-07 13:52:06 [http-nio-8080-exec-8] INFO  com.studentmanagement.service.impl.StudentServiceImpl - Fetching all students
+2026-08-07 13:52:06 [http-nio-8080-exec-8] INFO  com.studentmanagement.service.impl.StudentServiceImpl - Total students found : 41
+2026-08-07 13:52:06 [http-nio-8080-exec-8] INFO  com.studentmanagement.service.impl.StudentServiceImpl - findAllStudents took: 12ms
+2026-08-07 13:53:14 [http-nio-8080-exec-10] INFO  com.studentmanagement.service.impl.StudentServiceImpl - Fetching all students
+2026-08-07 13:53:14 [http-nio-8080-exec-10] INFO  com.studentmanagement.service.impl.StudentServiceImpl - Total students found : 41
+2026-08-07 13:53:14 [http-nio-8080-exec-10] INFO  com.studentmanagement.service.impl.StudentServiceImpl - findAllStudents took: 18ms
+2026-08-07 13:53:15 [http-nio-8080-exec-1] INFO  com.studentmanagement.service.impl.StudentServiceImpl - Fetching all students
+2026-08-07 13:53:15 [http-nio-8080-exec-1] INFO  com.studentmanagement.service.impl.StudentServiceImpl - Total students found : 41
+2026-08-07 13:53:15 [http-nio-8080-exec-1] INFO  com.studentmanagement.service.impl.StudentServiceImpl - findAllStudents took: 9ms
+2026-08-07 13:57:14 [http-nio-8080-exec-4] INFO  com.studentmanagement.service.impl.StudentServiceImpl - Fetching all students
+2026-08-07 13:57:14 [http-nio-8080-exec-4] INFO  com.studentmanagement.service.impl.StudentServiceImpl - Total students found : 41
+2026-08-07 13:57:14 [http-nio-8080-exec-4] INFO  com.studentmanagement.service.impl.StudentServiceImpl - findAllStudents took: 88ms
+2026-08-07 13:57:16 [http-nio-8080-exec-5] INFO  com.studentmanagement.service.impl.StudentServiceImpl - Fetching all students
+2026-08-07 13:57:16 [http-nio-8080-exec-5] INFO  com.studentmanagement.service.impl.StudentServiceImpl - Total students found : 41
+2026-08-07 13:57:16 [http-nio-8080-exec-5] INFO  com.studentmanagement.service.impl.StudentServiceImpl - findAllStudents took: 16ms
+2026-08-07 13:58:02 [http-nio-8080-exec-6] INFO  com.studentmanagement.service.impl.StudentServiceImpl - Fetching all students
+2026-08-07 13:58:02 [http-nio-8080-exec-6] INFO  com.studentmanagement.service.impl.StudentServiceImpl - Total students found : 41
+2026-08-07 13:58:02 [http-nio-8080-exec-6] INFO  com.studentmanagement.service.impl.StudentServiceImpl - findAllStudents took: 24ms
+2026-08-07 13:58:02 [http-nio-8080-exec-9] INFO  com.studentmanagement.service.impl.StudentServiceImpl - Fetching all students
+2026-08-07 13:58:02 [http-nio-8080-exec-9] INFO  com.studentmanagement.service.impl.StudentServiceImpl - Total students found : 41
+2026-08-07 13:58:02 [http-nio-8080-exec-9] INFO  com.studentmanagement.service.impl.StudentServiceImpl - findAllStudents took: 14ms
+2026-08-07 13:58:08 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m5s115ms939µs).
+2026-08-07 14:09:45 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8m36s586ms652µs200ns).
+2026-08-07 14:09:46 [http-nio-8080-exec-2] INFO  com.studentmanagement.service.impl.StudentServiceImpl - Fetching all students
+2026-08-07 14:09:46 [http-nio-8080-exec-2] INFO  com.studentmanagement.service.impl.StudentServiceImpl - Total students found : 41
+2026-08-07 14:09:46 [http-nio-8080-exec-2] INFO  com.studentmanagement.service.impl.StudentServiceImpl - findAllStudents took: 45ms
+2026-08-07 14:09:47 [http-nio-8080-exec-3] INFO  com.studentmanagement.service.impl.StudentServiceImpl - Fetching all students
+2026-08-07 14:09:47 [http-nio-8080-exec-3] INFO  com.studentmanagement.service.impl.StudentServiceImpl - Total students found : 41
+2026-08-07 14:09:47 [http-nio-8080-exec-3] INFO  com.studentmanagement.service.impl.StudentServiceImpl - findAllStudents took: 8ms
+2026-08-07 14:24:31 [http-nio-8080-exec-7] INFO  com.studentmanagement.service.impl.StudentServiceImpl - Fetching all students
+2026-08-07 14:24:31 [http-nio-8080-exec-7] INFO  com.studentmanagement.service.impl.StudentServiceImpl - Total students found : 41
+2026-08-07 14:24:31 [http-nio-8080-exec-7] INFO  com.studentmanagement.service.impl.StudentServiceImpl - findAllStudents took: 46ms
+2026-08-07 14:24:33 [http-nio-8080-exec-8] INFO  com.studentmanagement.service.impl.StudentServiceImpl - Fetching all students
+2026-08-07 14:24:33 [http-nio-8080-exec-8] INFO  com.studentmanagement.service.impl.StudentServiceImpl - Total students found : 41
+2026-08-07 14:24:33 [http-nio-8080-exec-8] INFO  com.studentmanagement.service.impl.StudentServiceImpl - findAllStudents took: 16ms
+2026-08-07 14:24:33 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m47s509ms132µs200ns).
+2026-08-07 14:24:41 [SpringApplicationShutdownHook] INFO  org.springframework.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-08-07 14:24:41 [tomcat-shutdown] INFO  org.springframework.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-08-07 14:24:41 [SpringApplicationShutdownHook] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-08-07 14:24:41 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-08-07 14:24:41 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-08-07 22:33:49 [main] INFO  com.studentmanagement.StudentManagementApplicationTests - Starting StudentManagementApplicationTests using Java 21.0.10 with PID 20984 (started by pulak in E:\Project_2026\July\StudentManagement)
+2026-08-07 22:33:49 [main] INFO  com.studentmanagement.StudentManagementApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2026-08-07 22:33:50 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-08-07 22:33:50 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 48 ms. Found 1 JPA repository interface.
+2026-08-07 22:33:51 [main] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-08-07 22:33:51 [main] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-08-07 22:33:52 [main] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-08-07 22:33:52 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-08-07 22:33:53 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@62c42a3
+2026-08-07 22:33:53 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-08-07 22:33:53 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/student_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: student_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-08-07 22:33:54 [main] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-08-07 22:33:54 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-08-07 22:33:54 [main] INFO  org.springframework.data.jpa.repository.query.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-08-07 22:33:54 [main] WARN  org.springframework.boot.jpa.autoconfigure.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-08-07 22:33:55 [main] WARN  org.springframework.boot.security.autoconfigure.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 74f2fd3a-993b-4638-a670-cb58b3c5a224
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-08-07 22:33:55 [main] INFO  org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-08-07 22:33:55 [main] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-08-07 22:33:56 [main] INFO  com.studentmanagement.StudentManagementApplicationTests - Started StudentManagementApplicationTests in 7.546 seconds (process running for 8.971)
+2026-08-07 22:33:57 [SpringApplicationShutdownHook] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-08-07 22:33:57 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-08-07 22:33:57 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-08-07 22:34:05 [restartedMain] INFO  com.studentmanagement.StudentManagementApplication - Starting StudentManagementApplication using Java 21.0.10 with PID 7820 (E:\Project_2026\July\StudentManagement\target\classes started by pulak in E:\Project_2026\July\StudentManagement)
+2026-08-07 22:34:05 [restartedMain] INFO  com.studentmanagement.StudentManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2026-08-07 22:34:05 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-08-07 22:34:05 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-08-07 22:34:06 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-08-07 22:34:06 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 43 ms. Found 1 JPA repository interface.
+2026-08-07 22:34:06 [restartedMain] INFO  org.springframework.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-08-07 22:34:06 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-08-07 22:34:06 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-07 22:34:06 [restartedMain] INFO  org.springframework.boot.web.context.servlet.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1439 ms
+2026-08-07 22:34:07 [restartedMain] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-08-07 22:34:07 [restartedMain] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-08-07 22:34:07 [restartedMain] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-08-07 22:34:07 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-08-07 22:34:07 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1c325730
+2026-08-07 22:34:07 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-08-07 22:34:08 [restartedMain] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/student_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: student_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-08-07 22:34:08 [restartedMain] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-08-07 22:34:08 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-08-07 22:34:09 [restartedMain] INFO  org.springframework.data.jpa.repository.query.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-08-07 22:34:09 [restartedMain] WARN  org.springframework.boot.jpa.autoconfigure.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-08-07 22:34:09 [restartedMain] WARN  org.springframework.boot.security.autoconfigure.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 358c9fa3-716b-4bb2-a7ca-81bb104cf4b8
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-08-07 22:34:09 [restartedMain] INFO  org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-08-07 22:34:09 [restartedMain] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-08-07 22:34:09 [restartedMain] INFO  org.springframework.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-08-07 22:34:09 [restartedMain] INFO  com.studentmanagement.StudentManagementApplication - Started StudentManagementApplication in 5.155 seconds (process running for 5.628)
+2026-08-07 22:35:18 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-07 22:35:18 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-08-07 22:35:18 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2026-08-07 22:35:18 [http-nio-8080-exec-1] INFO  com.studentmanagement.service.impl.StudentServiceImpl - Fetching all students
+2026-08-07 22:35:19 [http-nio-8080-exec-1] INFO  com.studentmanagement.service.impl.StudentServiceImpl - Total students found : 41
+2026-08-07 22:35:19 [http-nio-8080-exec-1] INFO  com.studentmanagement.service.impl.StudentServiceImpl - findAllStudents took: 554ms
+2026-08-07 22:35:23 [http-nio-8080-exec-2] INFO  com.studentmanagement.service.impl.StudentServiceImpl - Fetching all students
+2026-08-07 22:35:23 [http-nio-8080-exec-2] INFO  com.studentmanagement.service.impl.StudentServiceImpl - Total students found : 41
+2026-08-07 22:35:23 [http-nio-8080-exec-2] INFO  com.studentmanagement.service.impl.StudentServiceImpl - findAllStudents took: 24ms
+2026-08-07 23:06:52 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=12m14s547ms67µs500ns).
+2026-08-07 23:06:52 [http-nio-8080-exec-5] INFO  com.studentmanagement.service.impl.StudentServiceImpl - Fetching all students
+2026-08-07 23:06:52 [http-nio-8080-exec-5] INFO  com.studentmanagement.service.impl.StudentServiceImpl - Total students found : 41
+2026-08-07 23:06:52 [http-nio-8080-exec-5] INFO  com.studentmanagement.service.impl.StudentServiceImpl - findAllStudents took: 92ms
+2026-08-07 23:06:53 [http-nio-8080-exec-6] INFO  com.studentmanagement.service.impl.StudentServiceImpl - Fetching all students
+2026-08-07 23:06:53 [http-nio-8080-exec-6] INFO  com.studentmanagement.service.impl.StudentServiceImpl - Total students found : 41
+2026-08-07 23:06:53 [http-nio-8080-exec-6] INFO  com.studentmanagement.service.impl.StudentServiceImpl - findAllStudents took: 32ms
+2026-08-07 23:31:54 [http-nio-8080-exec-9] INFO  com.studentmanagement.service.impl.StudentServiceImpl - Fetching all students
+2026-08-07 23:31:54 [http-nio-8080-exec-9] INFO  com.studentmanagement.service.impl.StudentServiceImpl - Total students found : 41
+2026-08-07 23:31:54 [http-nio-8080-exec-9] INFO  com.studentmanagement.service.impl.StudentServiceImpl - findAllStudents took: 15ms
+2026-08-07 23:39:55 [http-nio-8080-exec-1] INFO  com.studentmanagement.service.impl.StudentServiceImpl - Fetching all students
+2026-08-07 23:39:55 [http-nio-8080-exec-1] INFO  com.studentmanagement.service.impl.StudentServiceImpl - Total students found : 41
+2026-08-07 23:39:55 [http-nio-8080-exec-1] INFO  com.studentmanagement.service.impl.StudentServiceImpl - findAllStudents took: 23ms
+2026-08-07 23:39:55 [http-nio-8080-exec-2] INFO  com.studentmanagement.service.impl.StudentServiceImpl - Fetching all students
+2026-08-07 23:39:55 [http-nio-8080-exec-2] INFO  com.studentmanagement.service.impl.StudentServiceImpl - Total students found : 41
+2026-08-07 23:39:55 [http-nio-8080-exec-2] INFO  com.studentmanagement.service.impl.StudentServiceImpl - findAllStudents took: 27ms
+2026-08-07 23:40:11 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=47s729ms916µs300ns).
+2026-08-07 23:40:12 [http-nio-8080-exec-5] INFO  com.studentmanagement.service.impl.StudentServiceImpl - Fetching all students
+2026-08-07 23:40:12 [http-nio-8080-exec-5] INFO  com.studentmanagement.service.impl.StudentServiceImpl - Total students found : 41
+2026-08-07 23:40:12 [http-nio-8080-exec-5] INFO  com.studentmanagement.service.impl.StudentServiceImpl - findAllStudents took: 9ms
+2026-08-07 23:40:12 [http-nio-8080-exec-6] INFO  com.studentmanagement.service.impl.StudentServiceImpl - Fetching all students
+2026-08-07 23:40:12 [http-nio-8080-exec-6] INFO  com.studentmanagement.service.impl.StudentServiceImpl - Total students found : 41
+2026-08-07 23:40:12 [http-nio-8080-exec-6] INFO  com.studentmanagement.service.impl.StudentServiceImpl - findAllStudents took: 10ms
+2026-08-07 23:40:33 [http-nio-8080-exec-9] INFO  com.studentmanagement.service.impl.StudentServiceImpl - Fetching all students
+2026-08-07 23:40:33 [http-nio-8080-exec-9] INFO  com.studentmanagement.service.impl.StudentServiceImpl - Total students found : 41
+2026-08-07 23:40:33 [http-nio-8080-exec-9] INFO  com.studentmanagement.service.impl.StudentServiceImpl - findAllStudents took: 24ms
+2026-08-07 23:40:34 [http-nio-8080-exec-10] INFO  com.studentmanagement.service.impl.StudentServiceImpl - Fetching all students
+2026-08-07 23:40:34 [http-nio-8080-exec-10] INFO  com.studentmanagement.service.impl.StudentServiceImpl - Total students found : 41
+2026-08-07 23:40:34 [http-nio-8080-exec-10] INFO  com.studentmanagement.service.impl.StudentServiceImpl - findAllStudents took: 13ms
