@@ -1,5 +1,7 @@
 package com.studentmanagement.entity;
 import jakarta.persistence.*;
+import jakarta.validation.constraints.*;
+
 @Entity
 @Table(name="student")
 public class Student {
@@ -33,11 +35,26 @@ public class Student {
     @Column(nullable = false)
     private String name;
 
-    @Column(nullable = false ,unique = true)
+    @NotBlank(message = "Email is required")
+    @Email(message = "Please enter a valid email")
+    @Column(nullable = false, unique = true)
     private String email;
 
+    @NotNull(message = "Phone number is required")
+    @Min(value = 1000000000L, message = "Phone number must be exactly 10 digits")
+    @Max(value = 9999999999L, message = "Phone number must be exactly 10 digits")
     private Long phone;
 
+
+    @NotNull(message = "Age is required")
+    @Min(
+            value = 1,
+            message = "Age must be at least 1"
+    )
+    @Max(
+            value = 150,
+            message = "Age cannot be greater than 150"
+    )
     private Integer age;
 
     private String department;

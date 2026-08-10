@@ -1,6 +1,7 @@
 package com.studentmanagement.controller;
 import com.studentmanagement.entity.Student;
 import com.studentmanagement.service.impl.StudentServiceImpl;
+import jakarta.validation.Valid;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import static org.springframework.data.jpa.domain.AbstractPersistable_.id;
@@ -20,7 +21,7 @@ public class StudentController {
 
     // Created or submit data
     @PostMapping
-    public Student saveStudent(@RequestBody Student student){
+    public Student saveStudent( @Valid @RequestBody Student student){
         return studentService.saveStudent(student);
     }
 
@@ -32,7 +33,7 @@ public class StudentController {
 
     //update the data
     @PutMapping
-    public Student updateStudent(@RequestBody Student student){
+    public Student updateStudent( @Valid @RequestBody Student student){
         return studentService.updateStudent(student);
     }
 
@@ -40,6 +41,10 @@ public class StudentController {
     @DeleteMapping("/{id}")
     public void deleteStudentById(@PathVariable  Long id){
         studentService.deleteStudentById(id);
+    }
+    @DeleteMapping
+    public void deleteStudentAll(){
+        studentService.deleteAllStudents();
     }
 
     //get all data one time

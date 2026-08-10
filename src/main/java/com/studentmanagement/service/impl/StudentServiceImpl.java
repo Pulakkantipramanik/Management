@@ -17,23 +17,30 @@ public class StudentServiceImpl implements StudentService {
     private static final Logger logger =
             LoggerFactory.getLogger(StudentServiceImpl.class);
 
+    //save logic
     @Override
     public Student saveStudent(Student student) {
         return studentRepository.save(student);
     }
 
+    //delete logic
     @Override
     public void deleteStudentById(Long id) {
+
         studentRepository.deleteById(id);
     }
 
+    //find student by single id
     @Override
     public Student findStudentById(Long id) {
+
         return studentRepository.findById(id).orElse(null);
     }
 
+    //
     @Override
     public Student updateStudent(Student student) {
+
         return studentRepository.save(student);
     }
 
@@ -46,6 +53,10 @@ public class StudentServiceImpl implements StudentService {
         logger.info("Total students found : {}", students.size());
         logger.info("findAllStudents took: {}ms", end - start);
         return students;
+    }
+
+    public void deleteAllStudents() {
+        studentRepository.deleteAll();
     }
 }
 //
